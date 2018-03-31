@@ -25,6 +25,6 @@
 			<AppenderRef ref="File" />
 		</Root>
 
-		<Logger name="org.apache.kafka" level="WARN" />
+		<Logger name="org.apache.kafka" level="ERROR" />
 	</Loggers>
 </Configuration>
