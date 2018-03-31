@@ -35,12 +35,10 @@ public class Producer {
 	public void produce(final String message) {
 
 		try {
-
 			String key = Long.toString(counter.incrementAndGet());
 			String value = message;
 			ProducerRecord<String, String> producerRecord = new ProducerRecord<String, String>(topic, key, value);
 			kafkaProducer.send(producerRecord);
-
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {

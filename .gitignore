@@ -3,6 +3,6 @@
 /WebContent/node/**
 /WebContent/node_modules/**
 /WebContent/bower_components/**
-/logs/**
+/log/**
 /.settings/**
 /build/
