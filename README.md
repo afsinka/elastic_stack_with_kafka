@@ -11,9 +11,11 @@ prerequisites:
 	- kibana
 
 run: 
+
 	mvn spring-boot:run
 	
 test:
+
 	http://localhost:9099/greeting?name=John
 	http://localhost:9099/consumer
 	http://localhost:9099/producer?message=test
