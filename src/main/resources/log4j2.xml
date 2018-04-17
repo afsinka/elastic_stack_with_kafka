@@ -12,8 +12,8 @@
 				pattern="[%d{dd.MM.y HH:mm:ss.SSS}] [%t] [%-5level %logger %L] - %msg%n" />
 		</File>
 
-		<Kafka name="Kafka" topic="afsin1">
-			<PatternLayout pattern="%date %message" />
+		<Kafka name="Kafka" topic="test">
+			<PatternLayout pattern="%message" />
 			<Property name="bootstrap.servers">localhost:9092</Property>
 		</Kafka>
 
@@ -25,6 +25,6 @@
 			<AppenderRef ref="File" />
 		</Root>
 
-		<Logger name="org.apache.kafka" level="ERROR" />
+		<Logger name="org.apache.kafka" level="INFO" />
 	</Loggers>
 </Configuration>
