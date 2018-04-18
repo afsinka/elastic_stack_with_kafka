@@ -1,0 +1,23 @@
+@echo off
+
+C:
+
+SET JAVA_HOME=C:\Program Files\Java\jdk1.8.0_71
+SET PATH=%JAVA_HOME%\bin;%PATH%
+
+cd "D:\elk\zookeeper-3.4.10\bin"
+start zkserver
+
+cd "D:\elk\logstash-6.2.3\bin"
+start logstash -f ..\config\logstash.conf 
+
+cd "D:\elk\elasticsearch-6.2.3\bin"
+start elasticsearch.bat
+
+cd "D:\elk\kibana-6.2.3-windows-x86_64\bin"
+start kibana.bat
+
+cd "D:\elk\kafka_2.11-1.1.0"
+start .\bin\windows\kafka-server-start.bat .\config\server.properties
+
+exit
