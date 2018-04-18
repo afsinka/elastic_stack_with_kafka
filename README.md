@@ -1,7 +1,5 @@
 # elastic_stack_with_kafka
 
-~~~~~~~~ UNDER DEVELOPMENT - NOT READY ~~~~~~~~
-
 prerequisites:
 
 	- zookeeper
